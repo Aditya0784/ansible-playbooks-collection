@@ -7,7 +7,7 @@ It installs **Apache Web Server**, enables it, and deploys a simple static websi
 
 1. **Clone this repo:**
    ```bash
-   git clone https://github.com/aditya0784/ansible-apache-playbook.git
+   git clone https://github.com/Aditya0784/ansible-playbooks-collection.git
    cd ansible-apache-playbook
 
 2. **Run the playbook:**
