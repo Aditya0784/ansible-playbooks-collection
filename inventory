@@ -1,1 +1,22 @@
+# ===========================
+# Ansible Inventory Example
+# ===========================
+
+# Web Servers (Apache/Nginx)
+[webservers]
+web1 ansible_host=203.0.113.10 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa  # Frontend Web Server 1
+web2 ansible_host=203.0.113.11 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa  # Frontend Web Server 2
+
+# Database Servers (MySQL/PostgreSQL)
+[dbservers]
+db1 ansible_host=203.0.113.20 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa   # Primary DB Server
+db2 ansible_host=203.0.113.21 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa   # Secondary DB Server
+
+# Cache Servers (Redis/Memcached)
+[cacheservers]
+cache1 ansible_host=203.0.113.30 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa  # Redis Cache Server
+
+# Variables for all servers
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
 
